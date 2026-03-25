@@ -1,0 +1,22 @@
+OpenVAS / GVM Important Commands Used
+
+1. Setup verification
+sudo gvm-check-setup
+
+2. Feed synchronization
+sudo greenbone-feed-sync --type nvt
+sudo greenbone-feed-sync --type scap
+sudo greenbone-feed-sync --type cert
+
+3. Start services
+sudo gvm-start
+
+4. Reset admin password
+sudo runuser -u _gvm -- gvmd --user admin --new-password Admin@123
+
+5. Service check
+sudo systemctl status ospd-openvas
+
+6. Scanner restart
+sudo systemctl restart ospd-openvas
+sudo systemctl restart gvmd

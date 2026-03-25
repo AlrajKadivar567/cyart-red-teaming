@@ -1,0 +1,20 @@
+title: Suspicious PowerShell Execution
+id: 11111111-2222-3333-4444-555555555555
+status: experimental
+description: Detects suspicious PowerShell commands often used in attacks
+author: User
+date: 2026/03/24
+logsource:
+  product: windows
+  category: process_creation
+
+detection:
+  selection:
+    Image|endswith: '\powershell.exe'
+    CommandLine|contains:
+      - 'EncodedCommand'
+      - 'IEX'
+      - 'DownloadString'
+  condition: selection
+
+level: high

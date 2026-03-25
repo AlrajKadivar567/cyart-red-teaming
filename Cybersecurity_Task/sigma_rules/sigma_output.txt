@@ -1,0 +1,12 @@
+Sigma Rule Conversion Output
+
+Detection Logic:
+Image ends with powershell.exe
+AND CommandLine contains:
+- EncodedCommand
+- IEX
+- DownloadString
+
+Purpose:
+This rule detects suspicious PowerShell executions commonly associated with malicious scripts, payload downloads, and encoded command execution.
+

@@ -1,0 +1,20 @@
+OpenVAS Setup Notes
+
+OpenVAS was installed and configured successfully on Kali Linux.
+
+Main issues resolved during setup:
+- Missing ospd-openvas configuration file
+- Feed synchronization lock issue
+- CERT feed missing
+- PostgreSQL role conflict
+- Password policy file issue
+
+Final result:
+GVM setup completed successfully and localhost scan executed.
+
+Scan configuration used:
+- Target: localhost
+- Scan profile: Full and Fast
+
+Output:
+Vulnerability report generated successfully.
