@@ -1,0 +1,8 @@
+Python 3.13.9
+git version 2.51.0
+Docker version 27.5.1+dfsg4, build cab968b3
+Nmap version 7.95 ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+openjdk 21.0.10 2026-01-20
+OpenJDK Runtime Environment (build 21.0.10+7-Debian-1)
+OpenJDK 64-Bit Server VM (build 21.0.10+7-Debian-1, mixed mode, sharing)

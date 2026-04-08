@@ -1,0 +1,36 @@
+=== Tool Audit Report ===
+Wednesday 08 April 2026 04:27:51 PM IST
+
+=== git ===
+/usr/bin/git
+
+=== python3 ===
+/home/AKNINJA/.pyenv/shims/python3
+
+=== docker ===
+/usr/bin/docker
+
+=== aws ===
+/usr/bin/aws
+
+=== terraform ===
+/usr/bin/terraform
+
+=== nmap ===
+/usr/bin/nmap
+
+=== msfconsole ===
+/usr/bin/msfconsole
+
+=== proxychains ===
+/usr/bin/proxychains
+
+=== pwsh ===
+/usr/bin/pwsh
+
+=== java ===
+/usr/bin/java
+
+=== go ===
+/usr/bin/go
+

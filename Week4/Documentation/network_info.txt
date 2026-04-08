@@ -1,0 +1,131 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether fc:b0:de:01:1b:b1 brd ff:ff:ff:ff:ff:ff
+    inet 10.104.71.87/24 brd 10.104.71.255 scope global dynamic noprefixroute wlan0
+       valid_lft 2981sec preferred_lft 2981sec
+    inet 10.104.71.88/24 brd 10.104.71.255 scope global secondary dynamic noprefixroute wlan0
+       valid_lft 2987sec preferred_lft 2537sec
+    inet6 2409:40c1:43:53e9:9b07:a01e:94d0:9f97/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 7023sec preferred_lft 7023sec
+    inet6 2409:40c1:43:53e9:1277:68d:51be:5ee6/64 scope global dynamic noprefixroute 
+       valid_lft 7023sec preferred_lft 7023sec
+    inet6 fe80::a3a4:2328:af70:b55b/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: br-5b2d20c94fed: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:54:9b:99:ac brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-5b2d20c94fed
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:54ff:fe9b:99ac/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:52:34:83:2d brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+5: vmnet1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether 00:50:56:c0:00:01 brd ff:ff:ff:ff:ff:ff
+    inet 172.16.248.1/24 brd 172.16.248.255 scope global vmnet1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fec0:1/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+6: vmnet8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether 00:50:56:c0:00:08 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.60.1/24 brd 192.168.60.255 scope global vmnet8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fec0:8/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+8: vethf78afa0@if7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-5b2d20c94fed state UP group default 
+    link/ether 96:bd:98:14:9c:08 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+    inet6 fe80::94bd:98ff:fe14:9c08/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+10: veth751fdd2@if9: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-5b2d20c94fed state UP group default 
+    link/ether 06:fc:22:da:ae:28 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    inet6 fe80::4fc:22ff:feda:ae28/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+12: veth4a71ecc@if11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-5b2d20c94fed state UP group default 
+    link/ether ae:6e:9d:47:f4:81 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+    inet6 fe80::ac6e:9dff:fe47:f481/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+14: veth1531611@if13: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-5b2d20c94fed state UP group default 
+    link/ether 2e:d6:53:27:8a:e9 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::2cd6:53ff:fe27:8ae9/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+Netid State  Recv-Q Send-Q                             Local Address:Port  Peer Address:PortProcess                                
+udp   UNCONN 0      0                                        0.0.0.0:48063      0.0.0.0:*    users:(("python3",pid=22681,fd=17))   
+udp   UNCONN 0      0                                   10.104.71.88:68         0.0.0.0:*                                          
+udp   UNCONN 0      0                                  10.30.111.197:68         0.0.0.0:*                                          
+udp   UNCONN 0      0                                        0.0.0.0:43033      0.0.0.0:*    users:(("python3",pid=22681,fd=23))   
+udp   UNCONN 0      0                                        0.0.0.0:59660      0.0.0.0:*    users:(("python3",pid=22681,fd=8))    
+udp   UNCONN 0      0                                        0.0.0.0:60173      0.0.0.0:*    users:(("python3",pid=22681,fd=14))   
+udp   UNCONN 0      0                                   192.168.60.1:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=24))   
+udp   UNCONN 0      0                                239.255.255.250:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=22))   
+udp   UNCONN 0      0                                   172.16.248.1:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=21))   
+udp   UNCONN 0      0                                239.255.255.250:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=19))   
+udp   UNCONN 0      0                                     172.17.0.1:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=18))   
+udp   UNCONN 0      0                                239.255.255.250:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=16))   
+udp   UNCONN 0      0                                     172.18.0.1:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=15))   
+udp   UNCONN 0      0                                239.255.255.250:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=13))   
+udp   UNCONN 0      0                                   10.104.71.88:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=12))   
+udp   UNCONN 0      0                                239.255.255.250:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=10))   
+udp   UNCONN 0      0                                   10.104.71.87:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=9))    
+udp   UNCONN 0      0                                239.255.255.250:3702       0.0.0.0:*    users:(("python3",pid=22681,fd=7))    
+udp   UNCONN 0      0                                        0.0.0.0:53766      0.0.0.0:*    users:(("python3",pid=22681,fd=20))   
+udp   UNCONN 0      0                                        0.0.0.0:38067      0.0.0.0:*    users:(("python3",pid=22681,fd=11))   
+udp   UNCONN 0      0                                    224.0.0.251:5353       0.0.0.0:*    users:(("brave",pid=5104,fd=54))      
+udp   UNCONN 0      0                                    224.0.0.251:5353       0.0.0.0:*    users:(("brave",pid=5104,fd=51))      
+udp   UNCONN 0      0                                    224.0.0.251:5353       0.0.0.0:*    users:(("brave",pid=5104,fd=49))      
+udp   UNCONN 0      0                                    224.0.0.251:5353       0.0.0.0:*    users:(("brave",pid=5104,fd=37))      
+udp   UNCONN 0      0                                              *:40443            *:*    users:(("python3",pid=22681,fd=38))   
+udp   UNCONN 0      0                                              *:57110            *:*    users:(("python3",pid=22681,fd=32))   
+udp   UNCONN 0      0         [2409:40c1:43:53e9:1277:68d:51be:5ee6]:546           [::]:*                                          
+udp   UNCONN 0      0        [2409:40c1:43:53e9:9b07:a01e:94d0:9f97]:546           [::]:*                                          
+udp   UNCONN 0      0              [fe80::a3a4:2328:af70:b55b]%wlan0:546           [::]:*                                          
+udp   UNCONN 0      0              [fe80::219f:8197:fb14:eeb4]%wlan0:546           [::]:*                                          
+udp   UNCONN 0      0                                              *:49720            *:*    users:(("python3",pid=22681,fd=26))   
+udp   UNCONN 0      0                                              *:50542            *:*    users:(("python3",pid=22681,fd=29))   
+udp   UNCONN 0      0                                              *:1716             *:*    users:(("kdeconnectd",pid=3333,fd=26))
+udp   UNCONN 0      0                                              *:51427            *:*    users:(("python3",pid=22681,fd=35))   
+udp   UNCONN 0      0                                              *:36423            *:*    users:(("python3",pid=22681,fd=41))   
+udp   UNCONN 0      0        [fe80::2cd6:53ff:fe27:8ae9]%veth1531611:3702          [::]:*    users:(("python3",pid=22681,fd=48))   
+udp   UNCONN 0      0                          [ff02::c]%veth1531611:3702          [::]:*    users:(("python3",pid=22681,fd=46))   
+udp   UNCONN 0      0        [fe80::ac6e:9dff:fe47:f481]%veth4a71ecc:3702          [::]:*    users:(("python3",pid=22681,fd=45))   
+udp   UNCONN 0      0                          [ff02::c]%veth4a71ecc:3702          [::]:*    users:(("python3",pid=22681,fd=43))   
+udp   UNCONN 0      0         [fe80::4fc:22ff:feda:ae28]%veth751fdd2:3702          [::]:*    users:(("python3",pid=22681,fd=42))   
+udp   UNCONN 0      0                          [ff02::c]%veth751fdd2:3702          [::]:*    users:(("python3",pid=22681,fd=40))   
+udp   UNCONN 0      0        [fe80::94bd:98ff:fe14:9c08]%vethf78afa0:3702          [::]:*    users:(("python3",pid=22681,fd=39))   
+udp   UNCONN 0      0                          [ff02::c]%vethf78afa0:3702          [::]:*    users:(("python3",pid=22681,fd=37))   
+udp   UNCONN 0      0                 [fe80::250:56ff:fec0:8]%vmnet8:3702          [::]:*    users:(("python3",pid=22681,fd=36))   
+udp   UNCONN 0      0                               [ff02::c]%vmnet8:3702          [::]:*    users:(("python3",pid=22681,fd=34))   
+udp   UNCONN 0      0                 [fe80::250:56ff:fec0:1]%vmnet1:3702          [::]:*    users:(("python3",pid=22681,fd=33))   
+udp   UNCONN 0      0                               [ff02::c]%vmnet1:3702          [::]:*    users:(("python3",pid=22681,fd=31))   
+udp   UNCONN 0      0      [fe80::42:54ff:fe9b:99ac]%br-5b2d20c94fed:3702          [::]:*    users:(("python3",pid=22681,fd=30))   
+udp   UNCONN 0      0                      [ff02::c]%br-5b2d20c94fed:3702          [::]:*    users:(("python3",pid=22681,fd=28))   
+udp   UNCONN 0      0              [fe80::a3a4:2328:af70:b55b]%wlan0:3702          [::]:*    users:(("python3",pid=22681,fd=27))   
+udp   UNCONN 0      0                                [ff02::c]%wlan0:3702          [::]:*    users:(("python3",pid=22681,fd=25))   
+udp   UNCONN 0      0                                              *:45207            *:*    users:(("python3",pid=22681,fd=44))   
+udp   UNCONN 0      0                                              *:37760            *:*    users:(("python3",pid=22681,fd=47))   
+tcp   LISTEN 0      4096                                   127.0.0.1:11434      0.0.0.0:*                                          
+tcp   LISTEN 0      4096                                     0.0.0.0:8080       0.0.0.0:*                                          
+tcp   LISTEN 0      4096                                   127.0.0.1:32913      0.0.0.0:*                                          
+tcp   LISTEN 0      4096                                   127.0.0.1:631        0.0.0.0:*                                          
+tcp   LISTEN 0      4096                                     0.0.0.0:5000       0.0.0.0:*                                          
+tcp   LISTEN 0      100                                    127.0.0.1:1883       0.0.0.0:*                                          
+tcp   LISTEN 0      511                                    127.0.0.1:6379       0.0.0.0:*                                          
+tcp   LISTEN 0      4096                                     0.0.0.0:3000       0.0.0.0:*                                          
+tcp   LISTEN 0      4096                                     0.0.0.0:3306       0.0.0.0:*                                          
+tcp   LISTEN 0      5                                        0.0.0.0:902        0.0.0.0:*                                          
+tcp   LISTEN 0      200                                    127.0.0.1:5432       0.0.0.0:*                                          
+tcp   LISTEN 0      511                                        [::1]:6379          [::]:*                                          
+tcp   LISTEN 0      4096                                        [::]:8080          [::]:*                                          
+tcp   LISTEN 0      200                                        [::1]:5432          [::]:*                                          
+tcp   LISTEN 0      4096                                        [::]:5000          [::]:*                                          
+tcp   LISTEN 0      4096                                        [::]:3000          [::]:*                                          
+tcp   LISTEN 0      4096                                        [::]:3306          [::]:*                                          
+tcp   LISTEN 0      100                                        [::1]:1883          [::]:*                                          
+tcp   LISTEN 0      5                                           [::]:902           [::]:*                                          
+tcp   LISTEN 0      50                                             *:1716             *:*    users:(("kdeconnectd",pid=3333,fd=27))
+tcp   LISTEN 0      4096                                       [::1]:631           [::]:*                                          
