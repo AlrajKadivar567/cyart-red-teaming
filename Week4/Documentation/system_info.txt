@@ -7,8 +7,8 @@ Codename:	kali-rolling
  Pretty hostname: ************
        Icon name: computer-laptop
          Chassis: laptop 💻
-      Machine ID: da300559318e4bb588e1bb1d2774f015
-         Boot ID: 7ea10a4803194700ae67dcc63f27055f
+      Machine ID: da300559318e4bb588e1bb1d2774xxxx
+         Boot ID: 7ea10a4803194700ae67dcc63f27xxxx
 Operating System: Kali GNU/Linux Rolling
           Kernel: Linux 6.16.8+kali-amd64
     Architecture: x86-64
