@@ -1,0 +1,56 @@
+# 🔴 Red Team Lab – Metasploitable2
+
+## 📌 Overview  
+Performed a practical **red team security assessment** using Kali Linux against Metasploitable2 in a controlled lab.  
+Covers full attack workflow from **reconnaissance to post-exploitation and reporting**.
+
+---
+
+## 🎯 Objectives  
+- Identify vulnerable services  
+- Exploit real-world vulnerabilities  
+- Gain and analyze shell access  
+- Perform post-exploitation  
+- Test password security  
+- Simulate malware detection  
+- Map to MITRE ATT&CK  
+
+---
+
+## ⚙️ Lab Setup  
+- **Attacker:** Kali Linux  
+- **Target:** Metasploitable2  
+- **Environment:** Virtual Lab  
+
+---
+
+## 🚀 Tasks Performed  
+- 🔍 Reconnaissance (port & service scanning)  
+- 🛠️ Vulnerability Assessment  
+- 💥 Exploitation (FTP, Samba)  
+- 🧠 Post-Exploitation (permissions, SUID)  
+- 🔁 Reverse Shell  
+- 🔐 Password Testing (default credentials)  
+- 🦠 Malware Simulation  
+- 🧩 MITRE ATT&CK Mapping  
+
+---
+
+## 📊 Key Findings  
+- Outdated services are easily exploitable  
+- Default credentials allow direct access  
+- Multiple attack paths exist  
+- Weak system hardening increases risk  
+
+---
+
+## 🛡️ Recommendations  
+- Update or remove vulnerable services  
+- Disable insecure protocols (e.g., Telnet)  
+- Enforce strong password policies  
+- Perform regular vulnerability scans  
+- Monitor network and authentication activity  
+
+---
+
+## 📁 Project Structure  
